@@ -1,5 +1,7 @@
 import { Metadata } from "next";
+import { ReactNode } from "react";
 
+// 메타데이터 변경 가능
 export const metadata: Metadata = {
   title: {
     template: "%s | Acme",
@@ -7,11 +9,11 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+interface Props {
+  children: ReactNode;
+}
+
+export default function RootLayout({ children }: Readonly<Props>) {
   return (
     <html lang="en">
       <body>{children}</body>
