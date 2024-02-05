@@ -13,10 +13,22 @@ interface Props {
   children: ReactNode;
 }
 
-export default function RootLayout({ children }: Readonly<Props>) {
+// const RootLayout = (props: Props) => {
+//   return (
+//       <html lang="ko">
+//           <body>{props.children}</body>
+//       </html>
+//   );
+// };
+
+// export default RootLayout;
+
+// export default function RootLayout({ children }: Readonly<Props>) {
+
+export default function RootLayout(props: Readonly<Props>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>{props.children}</body>
     </html>
   );
 }
