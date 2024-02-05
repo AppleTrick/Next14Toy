@@ -1,6 +1,6 @@
 import ProductFooter from "./footer";
 
-const ProductPage = () => {
+export default function ProductPage() {
   return (
     <>
       <div>
@@ -9,6 +9,4 @@ const ProductPage = () => {
       <ProductFooter />
     </>
   );
-};
-
-export default ProductPage;
+}
