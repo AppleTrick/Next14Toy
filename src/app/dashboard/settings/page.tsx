@@ -8,7 +8,7 @@ export default function SettingPage({ children }: Props) {
   //   console.log(children);
   return (
     <div>
-      <div>SettingPage</div>
+      <h2>Setting Page</h2>
       {/* <div>{children}</div> */}
     </div>
   );

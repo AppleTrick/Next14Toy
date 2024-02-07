@@ -7,7 +7,7 @@ interface Props {
 const ProductLayout = (props: Props) => {
   return (
     <div>
-      <h2>dashboard Layout</h2>
+      <h1>DashBoard Layout</h1>
       <div>{props.children}</div>
     </div>
   );

@@ -7,7 +7,7 @@ interface Props {
 export default function DashBoardPage({ children }: Props) {
   return (
     <div>
-      <div>DashBoardpage</div>
+      <h2>DashBoard Page</h2>
       <div>{children}</div>
     </div>
   );
