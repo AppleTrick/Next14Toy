@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { ReactNode } from "react";
+import "./global.css";
 
 // 메타데이터 변경 가능
 export const metadata: Metadata = {
@@ -12,18 +13,6 @@ export const metadata: Metadata = {
 interface Props {
   children: ReactNode;
 }
-
-// const RootLayout = (props: Props) => {
-//   return (
-//       <html lang="ko">
-//           <body>{props.children}</body>
-//       </html>
-//   );
-// };
-
-// export default RootLayout;
-
-// export default function RootLayout({ children }: Readonly<Props>) {
 
 export default function RootLayout(props: Readonly<Props>) {
   return (
