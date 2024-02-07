@@ -1,3 +1,5 @@
+"use client";
+
 const AuthPage = () => {
   return (
     <div className="py-8">
