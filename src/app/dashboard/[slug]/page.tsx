@@ -9,6 +9,5 @@ interface Props {
 }
 
 export default function page(props: Props) {
-  console.log(props);
   return <div>dashboard [slug] : {props.params.slug}</div>;
 }

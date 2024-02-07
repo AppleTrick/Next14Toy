@@ -8,7 +8,6 @@ interface Props {
 }
 
 export default function page({ params }: Props) {
-  console.log("params in [id]: ", params);
   return (
     <>
       <div> dashboard [slug] : {params.slug}</div>
