@@ -11,7 +11,7 @@ export const Navigation = ({ links }: NavigationProps) => {
   const pathname = usePathname();
   console.log(pathname);
   return (
-    <ul className="flex">
+    <ul className="flex bg-slate-500">
       {links.map(({ href, key }) => {
         const isActive = pathname == href;
         return (

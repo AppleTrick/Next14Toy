@@ -33,7 +33,7 @@ export const UseNavNavigation = ({ links, buttonTypes }: NavigationProps) => {
   return (
     <ul className="flex">
       {links.map(({ href, key }) => (
-        <li key={key} className={`flex-auto`}>
+        <li key={key} className="flex">
           {getButtonContent(href, key)}
         </li>
       ))}

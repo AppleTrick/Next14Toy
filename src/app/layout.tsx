@@ -45,11 +45,11 @@ export default function RootLayout(props: Readonly<Props>) {
         <header>
           <div>
             <Navigation links={links} />
-            <div>normal</div>
+            <div className="bg-blue-500 p-4">normal</div>
             <UseNavNavigation buttonTypes="normal" links={links} />
-            <div>refresh</div>
+            <div className="bg-green-500 p-4">refresh</div>
             <UseNavNavigation buttonTypes="refresh" links={links} />
-            <div>replace</div>
+            <div className="bg-yellow-500 p-4">replace</div>
             <UseNavNavigation buttonTypes="replace" links={links} />
           </div>
         </header>
