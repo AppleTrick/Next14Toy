@@ -2,7 +2,7 @@
 
 import { LinkButton } from "./LinkButton";
 
-type ButtonTypes = "normal" | "replace" | "refresh";
+type ButtonTypes = "push" | "replace" | "refresh";
 
 type NavigationProps = {
   links: Array<{ href: string; key: string }>;
@@ -11,17 +11,17 @@ type NavigationProps = {
 export const UseNavNavigation = ({ links, buttonTypes }: NavigationProps) => {
   const getButtonContent = (href: string, key: string) => {
     switch (buttonTypes) {
-      case "normal":
+      case "push":
         return <LinkButton to={href}>{key}</LinkButton>;
-      case "refresh":
-        return (
-          <LinkButton to={href} refresh={true}>
-            {key}
-          </LinkButton>
-        );
       case "replace":
         return (
           <LinkButton to={href} replace={true}>
+            {key}
+          </LinkButton>
+        );
+      case "refresh":
+        return (
+          <LinkButton to={href} refresh={true}>
             {key}
           </LinkButton>
         );
