@@ -1,13 +1,15 @@
-import { getPosts } from "../lib/get-post";
+import { getPosts } from "../api/post/getPosts";
 
 const session = null;
 
 export const Post = async () => {
   const posts = await getPosts();
+  //   console.log("posts: ", posts);
 
-  if (session == null) {
-    throw new Error("no session provided");
-  }
+  // 에러페이지 작동시키려면 주석을 해제
+  //   if (session == null) {
+  //     throw new Error("no session provided");
+  //   }
 
   return (
     <div className="container mx-auto py-8">
